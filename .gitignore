@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+venv/
+venv*/
+env/
+.venv/
+.env
+
+# Replit-managed (local to each Repl, not source)
+.pythonlibs/
+.upm/
+.cache/
+.local/
+.agents/
+.breakpoints
+.config/pip/
+
+# Editor / OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Secrets (never commit)
+*.env
+.env.*
+secrets.json
