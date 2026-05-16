@@ -72,3 +72,7 @@ Response (`200 application/json`):
 ```
 
 Error responses use the same JSON shape: `{"error": "..."}` with status `400`, `413`, `415`, or `500`.
+
+## License
+
+[MIT](LICENSE)
