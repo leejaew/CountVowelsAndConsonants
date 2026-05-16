@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vowel & Consonant Counter</title>
+    <style>
+        body { font-family: sans-serif; max-width: 500px; margin: 60px auto; padding: 0 20px; }
+        h1 { font-size: 1.5rem; margin-bottom: 24px; }
+        textarea { width: 100%; padding: 10px; font-size: 1rem; border: 1px solid #ccc; border-radius: 6px; box-sizing: border-box; resize: vertical; }
+        button { margin-top: 12px; padding: 10px 24px; font-size: 1rem; background: #3b82f6; color: white; border: none; border-radius: 6px; cursor: pointer; }
+        button:hover { background: #2563eb; }
+        .result { margin-top: 24px; padding: 16px; background: #f0f9ff; border: 1px solid #bae6fd; border-radius: 6px; }
+        .result p { margin: 6px 0; font-size: 1.1rem; }
+    </style>
+</head>
+<body>
+    <h1>Vowel &amp; Consonant Counter</h1>
+    <form method="POST">
+        <textarea name="text" rows="4" placeholder="Enter a string...">{{ input_string }}</textarea>
+        <br>
+        <button type="submit">Count</button>
+    </form>
+    {% if result is not none %}
+    <div class="result">
+        <p>Vowels: <strong>{{ result.vowels }}</strong></p>
+        <p>Consonants: <strong>{{ result.consonants }}</strong></p>
+    </div>
+    {% endif %}
+</body>
+</html>
