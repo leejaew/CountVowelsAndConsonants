@@ -108,3 +108,7 @@ start = "pylsp"
 [deployment]
 deploymentTarget = "vm"
 run = ["python3", "main.py"]
+build = ["pip", "install", "-r", "requirements.txt"]
+
+[agent]
+expertMode = true
